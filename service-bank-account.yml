@@ -6,15 +6,9 @@ spring:
     mongodb:
       database: BankAccount
       host: localhost
-      port: 27017  
-  application:
-    name: SERVICE-CUSTOMER
-  
+      port: 27017 
+
 eureka:
   client:
-    service-url:
-      register-with-eureka: true
-      fetch-registry: true
-      defaultZone: http://localhost:8761/eureka
-  instance:
-     hostname: localhost
+      serviceUrl:
+        defaultZone: http://localhost:8099/eureka/
