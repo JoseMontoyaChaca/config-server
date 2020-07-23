@@ -1,6 +1,5 @@
-spring:  data:    mongodb:      database: Customer      host: localhost      port: 27017  application:    name: CUSTOMER-SERVICE  autoconfigure:    exclude:    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-   
-eureka:
+spring:  data:    mongodb:      database: Customer      host: localhost      port: 27017    application:    name: CUSTOMER-SERVICE  autoconfigure:    exclude:    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration    
+eureka:
   client:
     service-url:
       register-with-eureka: true
@@ -9,4 +8,3 @@ eureka:
   instance:
      hostname: localhost
       
-#
