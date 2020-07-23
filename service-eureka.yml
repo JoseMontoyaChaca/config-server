@@ -1,4 +1,4 @@
-server:  port: 8099eureka:  instance:     hostname: localhost
+server:  port: 8099eureka:  instance:     hostname: localhost
   client:
     service-url:
       register-with-eureka: false
