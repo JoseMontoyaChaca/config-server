@@ -1,4 +1,4 @@
-spring:  data:    mongodb:      database: CreditAccount      host: localhost      port: 27017  application:    name: SERVICE-CUSTOMER
+server:  port: 8074spring:  data:    mongodb:      database: CreditAccount      host: localhost      port: 27017  application:    name: SERVICE-CUSTOMER
 eureka:
   client:
     service-url:
