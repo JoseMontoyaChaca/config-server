@@ -19,7 +19,7 @@ spring:
         - id: service-bank-account
           uri: lb://service-bank-account
           predicates:
-          - Path=/bank/**
+          - Path=/bankAccount/**
         - id: service-credit-account
           uri: lb://service-credit-account
           predicates:
@@ -28,3 +28,7 @@ spring:
           uri: lb://service-transaction
           predicates:
           - Path=/transaction/**
+	- id: service-bank
+          uri: lb://service-bank
+          predicates:
+          - Path=/bank/**
