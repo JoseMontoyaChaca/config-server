@@ -5,6 +5,7 @@ eureka:
   client:
       serviceUrl:
         defaultZone: http://localhost:8099/eureka/      
+
 spring:
   cloud:
     gateway:
@@ -32,3 +33,7 @@ spring:
           uri: lb://service-bank
           predicates:
           - Path=/bank/**
+	- id: service-atm
+          uri: lb://service-atm
+          predicates:
+          - Path=/atm/**
