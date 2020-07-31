@@ -1,3 +1,6 @@
+server:
+  port: 8060
+
 spring:
   cloud:
     gateway:
@@ -29,4 +32,3 @@ spring:
           uri: lb://service-atm
           predicates:
           - Path=/atm/**     
-
