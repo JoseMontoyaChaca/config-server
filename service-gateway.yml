@@ -20,7 +20,7 @@ spring:
           uri: lb://service-credit-account
           predicates:
           - Path=/credit/**
-        - id: service-transaction
+        - id: service-transactions
           uri: lb://service-transactions
           predicates:
           - Path=/transaction/**
